@@ -1,0 +1,23 @@
+h3 {
+	color: #F4EFEF;
+	font-size: 16px;
+    font-family: "whitney";
+}
+
+#mainchat {
+	position: absolute;
+	top: 55px;
+	left: 320px;
+	height: 570px;
+	width: 1180px;
+	overflow: auto;
+}
+
+::-webkit-scrollbar{
+	width: 7px;
+}
+
+::-webkit-scrollbar-thumb{
+	background: #565656;
+}
+

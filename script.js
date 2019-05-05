@@ -4,7 +4,6 @@ function createChat(text,pic,name){
 	var posy = 15;
 	document.getElementById("chatbox").value = "";
 	var m = document.createElement("div");
-	m.setAttribute("id","pic");
 	m.style.position = "absolute";
 	m.style.zIndex = "2";
 	m.style.top = mcount*60 + posy + 'px';
@@ -45,13 +44,23 @@ function createChat(text,pic,name){
     mcount++
 }
 
+function wishAnni(){
+	var anni = document.createElement("img");
+	anni.setAttribute("src","anni.png");
+	anni.setAttribute("height","540");
+	anni.setAttribute("width","960");
+	anni.style.position = "absolute";
+	anni.style.top = mcount*60 + 55 + 'px';
+	document.getElementById("mainchat").appendChild(anni);
+}
+
 function conversation(){
 	var text = document.getElementById('chatbox').value;
 	var texttest = text.replace(/\s/g, "");
     switch(mcount){
     	case 2: if (texttest != ''){
         			createChat(text, 'you.png', 'NOT a sweet potato!😁');
-        			storyScript();	
+        			storyScript();
 	    		}
 	    		break;
     	case 4: if (texttest != ''){
@@ -94,12 +103,13 @@ function conversation(){
         			storyScript();
         			storyScript();
         			storyScript();
-        			storyScript();	
+        			storyScript();
+        			setTimeout(wishAnni,8000);		
 	    		}
 	    		break;
     }
 }
- 
+
 function storyScript(){
 	switch(scount){
 		case 0: setTimeout(createChat, 1500, 'Hey there.', 'dpic.png', 'Elfinlox');

@@ -6,15 +6,15 @@ function createChat(text,pic,name){
 	var m = document.createElement("div");
 	m.style.position = "absolute";
 	m.style.zIndex = "2";
-	m.style.top = mcount*60 + posy + 'px';
+	m.style.top = mcount*200 + posy + 'px';
 	m.style.left = "0px";
     m.style.height = "80px";
     document.getElementById("mainchat").appendChild(m);
 
     var img = document.createElement("img");
     img.setAttribute("src", pic);
-    img.setAttribute("height", "40");
-    img.setAttribute("width", "40");
+    img.setAttribute("height", "150");
+    img.setAttribute("width", "150");
     m.appendChild(img);
 
 	var pead = document.createElement("p");
@@ -23,8 +23,8 @@ function createChat(text,pic,name){
 	var mtext = document.createElement("div");
     mtext.style.position = "absolute";
 	mtext.style.zIndex = "2";
-	mtext.style.top = posy + 10 + 'px';
-    mtext.style.left = "50px";
+	mtext.style.top = posy + 60 + 'px';
+    mtext.style.left = "180px";
     mtext.style.width = "1000px";
     mtext.appendChild(pead);
     m.appendChild(mtext);
@@ -35,8 +35,8 @@ function createChat(text,pic,name){
     var mname = document.createElement("div");
     mname.style.position = "absolute";
 	mname.style.zIndex = "2";
-	mname.style.top = posy - 30 + 'px';
-    mname.style.left = "50px";
+	mname.style.top = posy - 55 + 'px';
+    mname.style.left = "180px";
     mname.style.width = "1000px";
     mname.appendChild(head);
 	m.appendChild(mname);
@@ -47,10 +47,11 @@ function createChat(text,pic,name){
 function wishAnni(){
 	var anni = document.createElement("img");
 	anni.setAttribute("src","anni.png");
-	anni.setAttribute("height","540");
-	anni.setAttribute("width","960");
+	anni.setAttribute("height","576");
+	anni.setAttribute("width","1024");
 	anni.style.position = "absolute";
-	anni.style.top = mcount*60 + 55 + 'px';
+	anni.style.top = mcount*200 + 55 + 'px';
+	anni.style.left = "50px";
 	document.getElementById("mainchat").appendChild(anni);
 }
 
@@ -121,7 +122,7 @@ function storyScript(){
 		case 2: setTimeout(createChat, 2000, 'Well listen, I may have just met you but I have had a vision from the future that I feel like I must share with you.', 'dpic.png', 'Elfinlox');
 				scount++;
 			break;
-		case 3: setTimeout(createChat, 3000, 'You may feel its awkward but in the vision we will soon get to knew each other well and eventually I think we will both fell in love.', 'dpic.png', 'Elfinlox');
+		case 3: setTimeout(createChat, 3000, 'Its pretty awkward but in the vision we soon get to knew each other well and eventually we both fell in love.', 'dpic.png', 'Elfinlox');
 				scount++;
 			break;
 		case 4: setTimeout(createChat, 4500, 'Weird, right? Coming from a stranger.', 'dpic.png', 'Elfinlox');
@@ -130,13 +131,13 @@ function storyScript(){
 		case 5: setTimeout(createChat, 1500, 'Wonder if you think that\'s creepy? Wouldn\'t blame you if you did.', 'dpic.png', 'Elfinlox');
 				scount++;
 			break;
-		case 6: setTimeout(createChat, 3000, 'So anyway, from what i saw, in a few months it looks like we will begin talking to each other almost everyday, often for hours.', 'dpic.png', 'Elfinlox');
+		case 6: setTimeout(createChat, 3000, 'Anyway, from what i saw, looks like in a few months we will begin talking to each other almost everyday, often for hours.', 'dpic.png', 'Elfinlox');
 				scount++;
 			break;
 		case 7: setTimeout(createChat, 4000, 'Sometimes even till late in the night.', 'dpic.png', 'Elfinlox');
 				scount++;
 			break;
-		case 8: setTimeout(createChat, 2000, 'Yep and somehow on one of these late night talks i will apparently develop a mild crush on you.', 'dpic.png', 'Elfinlox');
+		case 8: setTimeout(createChat, 2000, 'We talk about a bunch of stuff. And somehow on one of these late night talks i apparently develop a mild crush on you.', 'dpic.png', 'Elfinlox');
 				scount++;
 			break;
 		case 9: setTimeout(createChat, 3000, 'Pretty commonplace, eh?', 'dpic.png', 'Elfinlox');

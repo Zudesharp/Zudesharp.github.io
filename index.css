@@ -20,6 +20,7 @@ p {
 	position: fixed;
 	z-index: 3;
 	height: 200px;
+	background-color: #2C2F33;
 }
 
 #topborder {

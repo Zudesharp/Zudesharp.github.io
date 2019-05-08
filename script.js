@@ -41,6 +41,24 @@ function createChat(text,pic,name){
     mname.appendChild(head);
 	m.appendChild(mname);
 
+	var dead = document.createElement("font");
+	dead.innerHTML = "05/22/2018";
+    dead.color = "#6B6B6B";
+    dead.size = "6";
+
+    var mdate = document.createElement("div");
+    mdate.style.position = "absolute";
+    mdate.style.zIndex = "2";
+    mdate.style.top = posy + 5 + 'px';
+    if (name == "Elfinlox"){
+    	mdate.style.left = "340px";
+    }
+    else{
+    	mdate.style.left = "650px";
+    }
+    mdate.appendChild(dead);
+    m.appendChild(mdate); 
+
     mcount++
 }
 
@@ -67,7 +85,7 @@ function conversation(){
     	case 4: if (texttest != ''){
         			createChat(text, 'you.png', 'NOT a sweet potato!😁');
         			storyScript();
-        			storyScript()	
+        			storyScript();	
 	    		}
 	    		break;
     	case 7: if (texttest != ''){

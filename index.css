@@ -41,7 +41,7 @@ p {
 	bottom: 40px;
 }
 
-input, select {
+input[type = text] {
 	position: fixed;
 	z-index: 3;
 	background: #2C2F33;
@@ -54,10 +54,22 @@ input, select {
 	bottom: 0px;
 	border-color: #1A1A1A;
 	border-top-width: 1px;
+	text-indent: 220px;
 }
 
 input:focus {
 	color: #F4EFEF;
+}
+
+input[type = submit] {
+	position: fixed;
+	z-index: 4;
+	border: none;
+	height: 200px;
+	width: 200px;
+	right: 0px;
+	bottom: 0px;
+	background: url("submit.png");	
 }
 
 h3 {
@@ -70,7 +82,7 @@ h3 {
 	position: absolute;
 	top: 205px;
 	left: 15px;
-	height: 1200px;
+	height: 1450px;
 	width: 1200px;
 	overflow: auto;
 }

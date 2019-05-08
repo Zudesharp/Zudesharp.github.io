@@ -2,7 +2,9 @@ var mcount = 0
 var scount = 0
 function createChat(text,pic,name){
 	var posy = 15;
-	document.getElementById("chatbox").value = "";
+	if (name != "Elfinlox"){
+		document.getElementById("chatbox").value = "";
+	}
 	var m = document.createElement("div");
 	m.style.position = "absolute";
 	m.style.zIndex = "2";

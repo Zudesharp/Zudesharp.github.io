@@ -37,7 +37,7 @@ p {
 	position: absolute;
 	height: 150px;
 	left: 150px;
-	z-index: 3;
+	z-index: 5;
 	bottom: 40px;
 }
 
@@ -71,7 +71,7 @@ h3 {
 	top: 205px;
 	left: 15px;
 	height: 1500px;
-	width: 1180px;
+	width: 1200px;
 	overflow: auto;
 }
 

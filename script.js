@@ -1,6 +1,7 @@
 var mcount = 0
 var scount = 0
 function createChat(text,pic,name){
+	document.getElementById("mainchat").scrollBy(0,300);
 	var posy = 15;
 	if (name != "Elfinlox"){
 		document.getElementById("chatbox").value = "";
@@ -157,7 +158,7 @@ function storyScript(){
 		case 7: setTimeout(createChat, 4000, 'Sometimes even till late in the night.', 'dpic.png', 'Elfinlox');
 				scount++;
 			break;
-		case 8: setTimeout(createChat, 2000, 'We talk about a lot of stuff. And somehow on one of these late night talks i apparently develop a crush on you.', 'dpic.png', 'Elfinlox');
+		case 8: setTimeout(createChat, 2000, 'We talk about a lot of stuff. And on one of these late night talks i apparently develop a crush on you.', 'dpic.png', 'Elfinlox');
 				scount++;
 			break;
 		case 9: setTimeout(createChat, 3000, 'Pretty commonplace, eh?', 'dpic.png', 'Elfinlox');

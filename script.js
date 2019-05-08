@@ -6,7 +6,7 @@ function createChat(text,pic,name){
 	var m = document.createElement("div");
 	m.style.position = "absolute";
 	m.style.zIndex = "2";
-	m.style.top = mcount*200 + posy + 'px';
+	m.style.top = mcount*215 + posy + 'px';
 	m.style.left = "0px";
     m.style.height = "80px";
     document.getElementById("mainchat").appendChild(m);

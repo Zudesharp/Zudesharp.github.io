@@ -82,9 +82,8 @@ h3 {
 	position: absolute;
 	top: 205px;
 	left: 15px;
-	height: 95%;
+	height: 90%;
 	width: 1200px;
-	background-color: red;
 	overflow: auto;
 }
 
